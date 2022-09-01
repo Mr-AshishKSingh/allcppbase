@@ -360,7 +360,7 @@ int main() {
 	//
 	//
 	string colors[5] = {"violet" , "blue" , "indigo" , "greem " ,  "yeelo"};
-	for (int za = 0 ; za<5t  ; za++) {
+	for (int za = 0 ; za<5  ; za++) {
 		std::cout << colors[za] << endl;
 	};
 
@@ -378,12 +378,13 @@ int main() {
 	//
 	//
 	string names2[3][2]= {
-		{ "ashish0", "ashish1" };
-		{ "ashish2" ,  "ashish3" };
-		{ "ashish4", "ashish5" };
+		{ "ashish0", "ashish1" },
+		{ "ashish2" ,  "ashish3" },
+		{ "ashish4", "ashish5" },
 
-		std::cout << names2[2][1] << endl;
+		
 	};
+	std::cout << names2[2][1] << endl;
 	//
 	//
 	//
@@ -392,8 +393,8 @@ int main() {
 	//
 	//
 	string names3[2][3] = {
-		{ "ashish1", "ashish2" , "ashish3" };
-		{ "ashish4" , "Ashish5", "ashish6" };
+		{ "ashish1", "ashish2" , "ashish3" },
+		{ "ashish4" , "Ashish5", "ashish6" },
 	};
 
 	for (int aaaa=0;aaaa<2;aaaa++){
