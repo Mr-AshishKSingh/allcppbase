@@ -364,6 +364,50 @@ int main() {
 		std::cout << colors[za] << endl;
 	};
 
+	// getting the size of the array 
+	//
+	char character[5] = { "a" , "b", "c" , "d", "e" };
+	char characterarraysize = sizeof(character);
+	cout<< "SIZE OF THE ARRAY IS " << characterarraysize << endl;
+	//
+	//
+	//
+	
+	// MULTIDIMENSIONAL ARRAY 
+	//
+	//
+	//
+	string names2[3][2]= {
+		{ "ashish0", "ashish1" };
+		{ "ashish2" ,  "ashish3" };
+		{ "ashish4", "ashish5" };
+
+		std::cout << names2[2][1] << endl;
+	};
+	//
+	//
+	//
+	//LOOP THROUGH THE MULTIDIMENSTIONAL ARRAY 
+	//
+	//
+	//
+	string names3[2][3] = {
+		{ "ashish1", "ashish2" , "ashish3" };
+		{ "ashish4" , "Ashish5", "ashish6" };
+	};
+
+	for (int aaaa=0;aaaa<2;aaaa++){
+		for (int bbbb=0; bbbb<3;bbbb++){
+			cout << names3[aaaa][bbbb] << endl;
+		}
+	};
+
+
+
+
+
+
+
 
 
 
