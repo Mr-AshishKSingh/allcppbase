@@ -366,14 +366,14 @@ int main() {
 
 	// getting the size of the array 
 	//
-	char character[5] = { "a" , "b", "c" , "d", "e" };
-	char characterarraysize = sizeof(character);
+	int character[5] = { 5,8,5,8,4 };
+	int characterarraysize = sizeof(character)/sizeof(string);
 	cout<< "SIZE OF THE ARRAY IS " << characterarraysize << endl;
 	//
 	//
 	//
-	
-	// MULTIDIMENSIONAL ARRAY 
+
+		
 	//
 	//
 	//
