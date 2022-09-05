@@ -431,6 +431,82 @@ int main() {
 	std::cout<< structure2.ashishkapuranaam << endl;
 	
 
+ 
+	//
+	//
+	// 
+	// STRUCTURES
+
+	struct{ 
+		int ma1;
+		std::string ma2;
+		bool ma3;
+		char ba4;
+	}structure1;
+
+	// ACCESING THE STRUCTURE VARIABLE 
+
+	struct {
+		int ashishkidob;
+		string ashishkapuranaam;
+		
+
+
+	}structure2;
+
+	structure2.ashishkidob = 10;
+	structure2.ashishkapuranaam = "ASHISH KUMAR SINGH ";
+	
+
+	std::cout << structure2.ashishkidob << endl;
+	std::cout<< structure2.ashishkapuranaam << endl;
+
+	// MULTIPLE STRUCTURE VARIABLES
+	//
+	// 
+	struct {
+		int height;
+		string fathersname;
+
+	}ashish, dipti ; // <------ STRUCTURE VARIABLES
+
+	ashish.height= 163; // <---- ACCESSED HEIGHT VARIABLE FOR (ashish structure )
+	ashish.fathersname = "RAJENDRA SINGH " ; //<----- ACCESSED FATHERSNAME VARIABLE FOR (ashish structure )
+
+	// similarly -------
+	dipti.height = 152; // <---- ACCESSED height variable for sricture variable named (ashish)
+	dipti.fathersname = "SHYAMPUARI " ; //<--- ACCESSING fathersname variable for structure variable (dipti)
+					    //
+	//
+	//
+	//
+	//NAMING THE STRUCTURE 
+	//
+	//
+	//
+	struct name /*<---- here we can specify the name of the structure so that we can
+		    use this structure block of code at any positionin the code */ { int srno;
+			    string username ;
+			    string passowrd ;
+
+		    };
+	//
+	//
+	//
+	/*REFERENCES - REFERENCES ARE JUST THE NICKNAME OR ALTERNATIVE NAME FOR THE DATA VARIABLES */
+	//
+	//
+	//
+	string ampa = "ashish";
+	string &ampb /* <----- this is the reference for the variable named (ampa) */ =  ampa ;
+	// we use dollar sign before any name to make it the reference of any data varaible 
+	
+
+	std::cout << ampa << endl;  // output = ashish
+	std::cout << &ampb << endl; // output = ashish // this will also have ashish as an outout because &ampb is the reference of data varaiable ampa
+	
+
+
 
 
 
