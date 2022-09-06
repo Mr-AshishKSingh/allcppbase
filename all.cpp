@@ -504,6 +504,17 @@ int main() {
 
 	std::cout << ampa << endl;  // output = ashish
 	std::cout << &ampb << endl; // output = ashish // this will also have ashish as an outout because &ampb is the reference of data varaiable ampa
+
+
+	//
+	//
+	// MEMORY ADDRESS - IT IS THE ADDRESS OF THE VARIABLE WHERE THE VARIABLE IS STORED IN THE SYSYTEM 
+	// WE USE $ sign BEFORE VARIABLE NAME TO GET ITS ADDRESS 
+	//
+	string institute = "GALGOTIA UNIVERSITY ";
+	cout << $institute << endl;  /* <------ HERE THE MEMORY ADDRESS WULL BE THE OUTPUT OF THE DATA VARIABLE NOT THE VALRIABLE VALUE */
+
+
 	
 
 
