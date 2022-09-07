@@ -514,7 +514,23 @@ int main() {
 	string institute = "GALGOTIA UNIVERSITY ";
 	cout << $institute << endl;  /* <------ HERE THE MEMORY ADDRESS WULL BE THE OUTPUT OF THE DATA VARIABLE NOT THE VALRIABLE VALUE */
 
+	// 
+	// POINTERS - these are also variables which stores the memory address of other variable as its valu e
+	//
+	//
+	string varablename = "AVALUE";
+	string* /* <--- using (*) after data type helps to create the pointer */ pntr /* <---- this (pntr) is a pointer name which can be anything */  = $variablename ; /* memoru address of the variable names (variable name) */
+	std::cout << $name << endl;
+	std::cout << pntr << endl ; /* output = memory address of the variable names (variable name) */
 
+
+	//
+	//DEREFERENCE - if we want to print the value of the pointer rather then the memory stored in the value of ponter 
+	//we use (* ) sign before pointername in (cout ) object 
+	//
+	std::cout << *pntr << endl ; /* <---- THIS WILL PRINT $name as an output rather then its memory address */
+
+ 
 	
 
 
