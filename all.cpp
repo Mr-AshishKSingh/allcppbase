@@ -543,7 +543,19 @@ int main() {
 	}
 
 	// calling a function 
-	cout << newfunction(); << endl 
+	cout << newfunction(); << endl;
+
+
+	//
+	//PARAMETERS - THESE ARE THE DATA WHICH CAN BE PASSED INTO A FUNCTION
+	//
+	void newfunction1(int age ) {
+		std::cout << age << "OK " << endl ;
+	}
+
+	newfunction1(15);
+	newfunction1(502);
+	newfunction1(55);
 
  
 	
