@@ -530,6 +530,21 @@ int main() {
 	//
 	std::cout << *pntr << endl ; /* <---- THIS WILL PRINT $name as an output rather then its memory address */
 
+	//
+	//
+	//FUNCTIONS
+	//These are the block of code which runs when called .
+	//
+	//
+	//CREATING A FUNCTION NAMES newfunction 
+	//
+	void newfunction() /* <-- DECLARATION OF A FUNCTION */ { 
+		cout << "ashish" << endl; /* DEFINING A FUNCTION */ 
+	}
+
+	// calling a function 
+	cout << newfunction(); << endl 
+
  
 	
 
