@@ -14,7 +14,7 @@ int main() {
 	std::cout << "HELLO USER THIS IS A FORM FOR YU PLEASE FILL IT " << endl;
 	std::cout << "IF ANY ERROR ARISES PLEASE MAIL AT officialwork.ashish@gmail.com" << endl;
 
-	/* suing \t chracter of adding a tap space betwwn the line */
+	/* using (\t) chracter of adding a tap space betwwn the line */
 
 	std::cout << "TAP \t used here" << endl;
 
@@ -22,30 +22,31 @@ int main() {
 
 	std::cout << "ashish \\ ashish" << endl;
 
-	/* using \" for adding " betwwn the words */
+	/* using (\") for adding " betwwn the words */
 
 	std::cout << "ashish \" ashish \" ashish" << endl;
 
-	// variable , vsrisblrd ,vsrisblrd 
+	// USING VARIABLES ....
+	
 	
 	int x = 10;
 	std::cout << x << endl ;
 
 	int mynumber = 31;
-	cout << mynumber << endl;
+	cout << " Value of the vaiable mymber " << mynumber << endl;
 
-	// assingh the value of the variable later on rather than with variable type 
+	// assigning the value of the variable later on rather than with variable type 
 	
 	int mysecondnumber;
 	mysecondnumber =10;
-	cout << mysecondnumber << endl;
+	cout << "Value of the variable mysecondnumber " << mysecondnumber << endl;
 
 	// we can overwrite the assigned value of our variable just by assigning a new valude to the same variable 
 	
 	int mythirdnumber =44; // Older value of the variable (mythirdnumber) = 44 
 	mynumber  = 55; // new assigned value 55 which will overwrite the older value i.e, 44
 	// here the value of my the variable (mythirdnumber) ie; 44 is overwrited by the new value 55 
-	cout << mythirdnumber << endl; // output = 55
+	cout << "Value of the variable mythirdnumber is " << mythirdnumber << endl; // output = 55
 	
 	//* combining the variable value  and a text together with the help of << op *//
 	
