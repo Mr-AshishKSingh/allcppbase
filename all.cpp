@@ -497,7 +497,7 @@ int main() {
 	//
 	//
 	string varablename = "AVALUE";
-	string* /* <--- using (*) after data type helps to create the pointer */ pntr /* <---- this (pntr) is a pointer name which can be anything */  = $variablename ; /* memoru address of the variable names (variable name) */
+	string* /* <--- using (*) after data type helps to create the pointer */ pntr /* <---- this (pntr) is a pointer name which can be anything */  = &varablename ; /* memoru address of the variable names (variable name) */
 	std::cout << &name << endl;
 	std::cout << pntr << endl ; /* output = memory address of the variable names (variable name) */
 
