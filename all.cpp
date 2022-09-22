@@ -490,7 +490,7 @@ int main() {
 	// WE USE $ sign BEFORE VARIABLE NAME TO GET ITS ADDRESS 
 	//
 	string institute = "GALGOTIA UNIVERSITY ";
-	cout << $institute << endl;  /* <------ HERE THE MEMORY ADDRESS WULL BE THE OUTPUT OF THE DATA VARIABLE NOT THE VALRIABLE VALUE */
+	cout << institute << endl;  /* <------ HERE THE MEMORY ADDRESS WULL BE THE OUTPUT OF THE DATA VARIABLE NOT THE VALRIABLE VALUE */
 
 	// 
 	// POINTERS - these are also variables which stores the memory address of other variable as its valu e
@@ -498,7 +498,7 @@ int main() {
 	//
 	string varablename = "AVALUE";
 	string* /* <--- using (*) after data type helps to create the pointer */ pntr /* <---- this (pntr) is a pointer name which can be anything */  = $variablename ; /* memoru address of the variable names (variable name) */
-	std::cout << $name << endl;
+	std::cout << &name << endl;
 	std::cout << pntr << endl ; /* output = memory address of the variable names (variable name) */
 
 
@@ -508,67 +508,7 @@ int main() {
 	//
 	std::cout << *pntr << endl ; /* <---- THIS WILL PRINT $name as an output rather then its memory address */
 
-	//
-	//
-	//FUNCTIONS
-	//These are the block of code which runs when called .
-	//
-	//
-	//CREATING A FUNCTION NAMES newfunction 
-	//
-	void newfunction() /* <-- DECLARATION OF A FUNCTION */ { 
-		cout << "ashish" << endl; /* DEFINING A FUNCTION */ 
-	}
-
-	// calling a function 
-	cout << newfunction(); << endl;
-
-
-	//
-	//PARAMETERS - THESE ARE THE DATA WHICH CAN BE PASSED INTO A FUNCTION
-	//
-	void newfunction1(int age ) {
-		std::cout << age << "OK " << endl ;
-	}
-
-	newfunction1(15);
-	newfunction1(502);
-	newfunction1(55);
-
- 
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-
-
-	
-	
-
-	
-
-
-
-
-	
-	
-
-
-
 
 	return 0;
 }
