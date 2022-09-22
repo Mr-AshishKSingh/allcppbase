@@ -11,8 +11,18 @@ void name() {
    
 }
 
+void usersdata(std::string dataname ) {
+    std::cout << dataname << std::endl;
+}
+
 int main() {
     name();
+    usersdata("ASHSISH");
+    usersdata("dipti");
+    usersdata("RAJENDRA");
+    usersdata("shyampyati");
+
+
     return 0;
 
 
