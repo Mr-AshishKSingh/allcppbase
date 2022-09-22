@@ -407,29 +407,6 @@ int main() {
 	// ashish commit checking 
 
 
-	// STRUCTURES
-
-	struct{ 
-		int ma1;
-		std::string ma2;
-		bool ma3;
-		char ba4;
-	}structure1;
-
-	struct {
-		int ashishkidob;
-		string ashishkapuranaam;
-		
-
-
-	}structure2;
-
-	structure2.ashishkidob = 10;
-	structure2.ashishkapuranaam = "ASHISH KUMAR SINGH ";
-	
-
-	std::cout << structure2.ashishkidob << endl;
-	std::cout<< structure2.ashishkapuranaam << endl;
 	
 
  
