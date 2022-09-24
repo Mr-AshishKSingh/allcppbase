@@ -168,7 +168,7 @@ int main() {
 	string cname;
 	cout << "Insert a word please " << endl;
 	cin >> cname ;
-	cout << "The Entry was " << " " <<  << cname ; //O = INPUT BY THE USER
+	cout << "The Entry was " << " " <<   cname ; //O = INPUT BY THE USER
 	
 	// HERE IF THE USER INSERTS THE SENTENCE THEN THE SPACES WIIL BE CONSIDERED AS  TERIMINATING CHARACTER ;
 	// TO RESOLVE THAT WE USE getline function ........
@@ -176,12 +176,11 @@ int main() {
 	string dname;
 	cout << "Insert a Sentence " << endl;
 	getline(cin,dname); // here the spaces will not be considered as a terminating chatracter +
-	std::cout << "Thje Entry was  " << " "  << dname << endl;
+	std::cout << "The Entry was  " << " "  << dname << endl;
 
-  // namespace cand be omitted with standard library
+    // namespace cand be omitted with standard library
 	
-	// all ops 
-	//
+	/* OPERATORS */
 	
 	// library added <cmath>
 	// #included <cmath> as an header file
@@ -191,15 +190,15 @@ int main() {
 	o=p=q=r=10;
 	//ARTHEMATIC OPS 
 	//
-	std::cout << "ADD" <<o+p+q+r << endl ;
-	std::cout << "SUB " << o-p-q-r << endl;
-	std::cout << "MUL" << o*p*q*r << endl;
-	std::cout << "DIV" << o/p << "\n";
+	std::cout << "Addiiton (o+p+q+r) = (10+10+10+10+) " << " " << o+p+q+r << endl ;
+	std::cout << "Substraction (o+p+q+r) = (10-10-10-10) " << " " << o-p-q-r << endl;
+	std::cout << "Multiplication (o+p+q+r) = (10*10*10*10)" << " " << o*p*q*r << endl;
+	std::cout << "Division (o/p) = (10/10)" << " " <<  o/p << "\n";
 	// using operators in cout , can be used also with the new int variable defined ;
 	int nn = ++q;
 	int mm = --q;
-	std::cout << nn << endl ; // ++ increasing the value of q by 1 
-	std::cout << mm << "\n" ; // -- decresing the value of q by 1
+	std::cout << "Increased value of q=10 by 1 so it become q=11 using ++q" << " " <<  nn << endl ; // ++ increasing the value of q by 1 
+	std::cout << "Decreased value of q = 10 by 1 so it became q=9 using --q "<<  " " << mm << "\n" ; // -- decresing the value of q by 1
 	
 	// ASSIGNMENT OPS
 	// for assigning the values 
@@ -244,8 +243,8 @@ int main() {
 	// else if - if is false then else if will be executed
 	
 	int za = 10 , zb = 30 , zc = 40 ;
-	if ( za =10 ) {
-		std::cout << "I LOVE INDIA" << "\n";
+	if ( za ==10 ) {
+		std::cout << "Condition of IF statement was true so output is " << " " << "I LOVE INDIA" << "\n";
 
 	};
 	// the the if cond is true .....
@@ -256,11 +255,11 @@ int main() {
 		std:: cout << "COND WAS TRUE " << endl;
 
 	} else {
-		cout << "THE COND WAS FALSE" << endl;
-	};// O
+		cout << " IF Condition was false so ELSE is executed " << " " << "THE COND WAS FALSE" << endl;
+	};
 	
 
-	// IF ENSEIF AND ELSE 
+	// IF ELSEIF AND ELSE 
   if (za == 45185) {
 		std::cout << "THE IF WAS TRUE" << endl;
 	} else if (za==100) {
@@ -329,7 +328,7 @@ int main() {
 	// while loop
 	int caa ;
 	caa =4566;
-	while (caa=4566){
+	while (caa==4566){
 		std::cout<< "THE WHILE CONDITIO WAS TRUE "<< endl;
 		break;
 		caa++;
@@ -343,13 +342,13 @@ int main() {
 		cout << "THIS IS A DO SECTION OF THE LOOP"<< endl;
 		break ;
 	}
-	while (cab =4566);{
-		std::cout << " THIS IS THE WHILE CONDITION OF THE LOOP IT SI EXECUTED WHEN TEH LOOP CONDITION WAS TRUE"<< endl;
+	while (cab ==4566);{
+		std::cout << " THIS IS THE WHILE CONDITION OF THE LOOP IT SI EXECUTED WHEN TEH WHILE LOOP CONDITION WAS TRUE"<< endl;
 		
 		cab++;
 	};
 
-	// for loop; ok ashish
+	// for loop; 
 	
 	for (int i = 0; i < 5; i++) {
 		cout<< i << endl;
@@ -357,7 +356,7 @@ int main() {
 
 	// c++ arr
 	//
-	string names1[10] = {"ashish " , "dipti " , "radhika" , "darsil" , "soham" , "rahul" , "vaibhav" , "aniket" , "chirag" , "aryan"  }; //indexing is 0112345678910
+	string names1[10] = {"ashish " , "dipti " , "radhika" , "darsil" , "soham" , "rahul" , "vaibhav" , "aniket" , "chirag" , "aryan"  }; //indexing is 012345678910
 																																		//using this indexing for reffering the main values in the array main init
 
 	std:: cout << names1[5] << endl; // o =  rahul coz the index no is 5 to the 6th value 
@@ -377,7 +376,7 @@ int main() {
 	// getting the size of the array 
 	//
 	int character[5] = { 5,8,5,8,4 };
-	int characterarraysize = sizeof(character)/sizeof(string);
+	int characterarraysize = sizeof(character) / sizeof(string);
 	cout<< "SIZE OF THE ARRAY IS " << characterarraysize << endl;
 	//
 	//
@@ -455,7 +454,7 @@ int main() {
 		int height;
 		string fathersname;
 
-	/* }ashish, dipti ; // <------ STRUCTURE VARIABLES */
+	}ashish , dipti ; // <------ STRUCTURE VARIABLES */
 
 	ashish.height= 163; // <---- ACCESSED HEIGHT VARIABLE FOR (ashish structure )
 	ashish.fathersname = "RAJENDRA SINGH " ; //<----- ACCESSED FATHERSNAME VARIABLE FOR (ashish structure )
@@ -510,8 +509,6 @@ int main() {
 	std::cout << &name << endl;
 	std::cout << pntr << endl ; /* output = memory address of the variable names (variable name) */
 
-
-	//
 	//DEREFERENCE - if we want to print the value of the pointer rather then the memory stored in the value of ponter 
 	//we use (* ) sign before pointername in (cout ) object 
 	//
