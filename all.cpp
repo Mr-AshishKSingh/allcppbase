@@ -376,7 +376,7 @@ int main() {
 	// getting the size of the array 
 	//
 	int character[5] = { 5,8,5,8,4 };
-	int characterarraysize = sizeof(character) / sizeof(string);
+	int characterarraysize = sizeof(character) ;
 	cout<< "SIZE OF THE ARRAY IS " << characterarraysize << endl;
 	//
 	//
