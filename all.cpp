@@ -2,75 +2,78 @@
 #include <string>
 #include <cmath>
 using namespace std;
-
-// SYNTAXES 
-// O = OUTPUT 
-// I = IN[UT 
-// E = ERROR]
+using std::cout;
+using std::cin ;
+using std::endl;
 
 int main() {
-	/* CHICHKING THE COUT FOR OUTPUT COMMAND */
+	/* COUT  */
 	 
-	std::cout << "HELLO USER THIS IS A FORM FOR YU PLEASE FILL IT " << endl;
-	std::cout << "IF ANY ERROR ARISES PLEASE MAIL AT officialwork.ashish@gmail.com" << endl;
+	std::cout << "Hello Friend, This code  has all the basic syntaxes of C++ " << endl;
+	std::cout << "For any query please comntact officialwork.ashish@gmail.com " << endl;
 
 	/* using (\t) chracter of adding a tap space betwwn the line */
 
-	std::cout << "TAP \t used here" << endl;
+	std::cout << "The space ahead is made using (t) charachter \t used here" << endl;
 
 	/* using (/) character to add / betwwen the texts */
 
-	std::cout << "ashish \\ ashish" << endl;
+	std::cout << "addeded using the slash slash character ----->  \\ ashish" << endl;
 
 	/* using (\") for adding " betwwn the words */
 
 	std::cout << "ashish \" ashish \" ashish" << endl;
+	//
+	//
+	//
+	//
+	//
+	//
 
-	// USING VARIABLES ....
-	
-	
+	/* VARIABLES  */
+	/* Syntax ---> ( variabledatatype variablename = its value ) */
+
 	int x = 10;
-	std::cout << x << endl ;
-
-	int mynumber = 31;
-	cout << " Value of the vaiable mymber " << mynumber << endl;
+	std::cout <<"Data Type (int ) used here yo print this value  " << " " <<  x << endl ;
 
 	// assigning the value of the variable later on rather than with variable type 
 	
 	int mysecondnumber;
 	mysecondnumber =10;
-	cout << "Value of the variable mysecondnumber " << mysecondnumber << endl;
+	cout << "Value of the variable mysecondnumber which is assigned after declaring the varable is " << " " << mysecondnumber << endl;
 
 	// we can overwrite the assigned value of our variable just by assigning a new valude to the same variable 
 	
 	int mythirdnumber =44; // Older value of the variable (mythirdnumber) = 44 
-	mynumber  = 55; // new assigned value 55 which will overwrite the older value i.e, 44
+	mythirdnumber  = 55; // new assigned value 55 which will overwrite the older value i.e, 44
 	// here the value of my the variable (mythirdnumber) ie; 44 is overwrited by the new value 55 
-	cout << "Value of the variable mythirdnumber is " << mythirdnumber << endl; // output = 55
-	
-	//* combining the variable value  and a text together with the help of << op *//
-	
-	int myage = 19 ; // variable defined myage eith value 19
-	cout << "My Age is " /* this is a text */ << myage /* this is a variagele whose value 19 will be displayed in the output */ << endl;
+	cout << "Value of the variable mythirdnumber which is overwrited with the new assigned value is  " << " " <<  mythirdnumber << endl; // output = 55
+	//
+	//
+	//
+	//
+	//
+	//
+	//
 
-	// ADDING TWO INTEGER TYPE VARIABLES WITH THE HELP OF + OPERATOR 
+	/* OPERATORS */
+    // ADDITION OF INTEGER DATA TYPE 
 	
 	int a,b,c; //two variables a and b of type integer are defined here ;
 	a=50 , b=50 ; // valued to both the integer is defined
 	c = a+b ;
-	cout << "Sum of the integer a and b whose values are 50 both is " << c << endl;
+	cout << "Sum of the integer a and b who has value 50 each is (c = a+b) " << " " <<  c << endl;
 
 	// we can declare many variable of single type in one line also
 	int raabta =50 , dil= 40 , m = 66 ; // diffrent variables of same type in a single line 
-	std::cout << raabta << dil << m << endl;
-	std::cout << raabta*dil*m << endl; //multiplied the variables using * coperator
+	std::cout << " Multiplication of 50*40*60 is " << " " << raabta*dil*m << endl; //multiplied the variables using * coperator
 	
 	//* WE CAN ASSIGH SAME VALUES TO THE DIFFRENT VARIABLE
 	//BY SIMPLY EQUATING THEM TO EACH OTHER AND THEN DEFINING THE VALUES */
 	//
 	int e,f,g;
 	e=f=g=50; // assigned the equal values to all the variables in a single line by simple equating them ......
-	std::cout << e+f+g << endl;
+	std::cout << " Addition of 50 +50 +50 is " << " " <<  e+f+g << endl;
 
 	// to fix the value of any variable we use (const) object before the 
 	// variable type 
@@ -78,51 +81,53 @@ int main() {
 	const int h = 66;
 	 // from here the older value will not be overwrited because the integertype is using ----- 
 				// -------------a const object
-	cout << h << endl;
+	cout << " Here we have the variable names (h) whose value is fixed using the const object , the value is " << " " <<  h << endl;
 
 	/* FOR TAKING INPUT FROM THE USER WE USE cin object .... */
 	int i;
-	std::cout << "TYPE A NUMBER " << endl;
+	std::cout << " Getting input from the user using (cin) Object  " << endl;
+	cout << "Enter a Number " << endl;
 	cin >> i ; // we never use endl with cin 
-	cout << "THE NUMBER IS " <<i << endl;
+	cout << "The Number is " << " "  << i << endl;
 
 	// DEFINING NUMERIC DATA TYPES 
 	// INT DOUBLE AND FLOAT 
 	int j = 1000;
 	double k = 5.66;
 	float l = 8.8;
-	std::cout << "INT J DEFINED IS " << j << endl; // COUT FOR INT
-	std::cout << "DOUBLE K DEFINED HERE IS " << k << endl; // COUT FOT DOUBLE
-	std::cout << " FLOAT L DEFINED HERE IS " << k << endl; // COUT FOR FLOAt	
+	std::cout << "INT J DEFINED IS "   << " " << j << endl; // COUT FOR INT
+	std::cout << "DOUBLE K DEFINED HERE IS " << " " << k << endl; // COUT FOT DOUBLE
+	std::cout << " FLOAT L DEFINED HERE IS " << " " << k << endl; // COUT FOR FLOAt	
 	//BOLLEAN DATA TYPE
 	bool coadingisfun = true; // for true value it gives 1 as output
 															 
 	bool fishistasty = false ; // for false it goves 0 as ouptut 
-	std::cout << coadingisfun << endl;
-	std::cout << fishistasty << endl;
+	std::cout << "True " << coadingisfun << endl;
+	std::cout << " False " << fishistasty << endl;
 
 
 	//CHARACTER DATA TYPE 
 	char ashishfirstletter = a ; // this takes onl;y single character input 
-	std::cout << ashishfirstletter << endl;
+	std::cout << "Here character data type is used to print a single character ----> The character is " << " " <<  ashishfirstletter << endl;
 
 	//STRING DATA TTYPE 
 	string name; //strind data type can take a letter as a input.
 	name = "ashish" ;
-	std::cout << name << endl;
+	std::cout << "Here String datatype is used to print a word " << "The word is " << " " << name << endl;
+
 	
 	// STRING CONCATENATION - additing pf two string variable values 
 	string firstname = "Ashish" ;
 	string lastname = "Singh" ;
-	string fullname = firstname = lastname ; // here the catenation is done 
+	string fullname = firstname + lastname ; // here the catenation is done 
 																					 // but this the space will not come betwwn the ashish ans singh
 																					 // the output for this full name string variable will be ashishsingh
 	// we can fix it by adding a space character beteen the both variables .........
 	//
 	string fullnamewithspace = firstname + " " + lastname ;
 	// Now thw outtput will be ashish singh
-	std::cout << fullname << endl; //with out space
-	std::cout << fullnamewithspace << endl; // with space
+	std::cout << "Simple Concatenation of two string without Space " << " (ashish + singh ) " << fullname << endl; //with out space
+	std::cout << " Here concatenation done of two strings with a space between them " << "(ashish + singh} " << fullnamewithspace << endl; // with space
 																					//
 																					//
 	//APPEND OPERATOR
@@ -130,7 +135,7 @@ int main() {
 	string firstword = "ASHISH" ;
 	string lastword = "SINGH" ;
 	string fullword = firstword.append(lastword);
-	std::cout << fullword << endl;
+	std::cout << " Here .append is used to concatenate two strings ashish.appned(singh) " << fullword << endl;
 
 	// (+) op functions diffrent for int data type and string data type 
 	// for int it performs addition 
@@ -141,33 +146,37 @@ int main() {
 
 	// LENGTH OF A STRING 
 	string letter = "ashish " ;
-	std::cout << "LENGTH OF THE VARIABLE letter is " << letter.length() << endl;
-	std::cout << "LENGTH IS " << letter.size() << endl;
+	std::cout << "Checking Length of the word ashish using .length() "<< "The length is " << " "  << letter.length() << endl;
+	std::cout << "Checking length of the word (ashish) using .size() " << "The Length is " << " " << letter.size() << endl;
 
 	// ACCESSING A CHARACTER IN A STRING 
 	// can be accessed by refering to the index number 
 	string aname = "cppcode"; // indexing is 0123456
-	std::cout << aname[2] << endl; // OUTPUT  = p 
-	std::cout << aname[0] << endl; // O = c
+	cout << "Accessing a character from a string word uisng its index number " << endl;
+	std::cout << " Here we have accessed the  third character of the word (cppcode) using the index number [2] " << endl;
+	cout << "The character is -----> " << " " << aname[2] << endl; // OUTPUT  = p 
+	std::cout << " Here we have accesed the first character of the word ( cppcode ) using index number [0] " <<endl;
+	cout<< "The character is ----> " << " " << aname[0] << endl; // O = c
 	
 	// a string character can also be change by referring the index nimber of the value character .....
 	string bname = "python " ; //indexing is 01234 
 	bname[1] = 'X' ; // index no 1 = y replaced by z
-	std::cout << bname << endl; //o = pzthon
+	cout << "Changed the character (y) of the word python uisng the index number [1] " << endl;
+	std::cout << "Python changed to " << "Python -----> " << " " << bname << endl; //o = pzthon
 
 	// string with cin
 	string cname;
-	cout << "INSERT CNAME PLEASE" << endl;
+	cout << "Insert a word please " << endl;
 	cin >> cname ;
-	cout << "THE ENTRY WAS " << cname ; //O = INPUT BY THE USER
+	cout << "The Entry was " << " " <<  << cname ; //O = INPUT BY THE USER
 	
-	// HERE IF THE USER TNSERTS THE SENTENCE THEN THE SPACES WIIL BE CONSIDERED AS  TERIMINATING CHARACTER ;
+	// HERE IF THE USER INSERTS THE SENTENCE THEN THE SPACES WIIL BE CONSIDERED AS  TERIMINATING CHARACTER ;
 	// TO RESOLVE THAT WE USE getline function ........
 	//
 	string dname;
-	cout << "INSERT DNAME " << endl;
+	cout << "Insert a Sentence " << endl;
 	getline(cin,dname); // here the spaces will not be considered as a terminating chatracter +
-	std::cout << "THE INSERCTION IS " << dname << endl;
+	std::cout << "Thje Entry was  " << " "  << dname << endl;
 
   // namespace cand be omitted with standard library
 	
@@ -446,7 +455,7 @@ int main() {
 		int height;
 		string fathersname;
 
-	}ashish, dipti ; // <------ STRUCTURE VARIABLES
+	/* }ashish, dipti ; // <------ STRUCTURE VARIABLES */
 
 	ashish.height= 163; // <---- ACCESSED HEIGHT VARIABLE FOR (ashish structure )
 	ashish.fathersname = "RAJENDRA SINGH " ; //<----- ACCESSED FATHERSNAME VARIABLE FOR (ashish structure )
