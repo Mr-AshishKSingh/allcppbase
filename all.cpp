@@ -471,7 +471,7 @@ int main() {
 	//
 	//
 	struct name /*<---- here we can specify the name of the structure so that we can
-		    use this structure block of code at any positionin the code */ { int srno;
+		    use this structure block of code at any position the code */ { int srno;
 			    string username ;
 			    string passowrd ;
 
@@ -485,16 +485,16 @@ int main() {
 	//
 	string ampa = "ashish";
 	string &ampb /* <----- this is the reference for the variable named (ampa) */ =  ampa ;
-	// we use dollar sign before any name to make it the reference of any data varaible 
+	// we use dollar sign before any name to make it the reference of any data variable
 	
 
 	std::cout << ampa << endl;  // output = ashish
-	std::cout << &ampb << endl; // output = ashish // this will also have ashish as an outout because &ampb is the reference of data varaiable ampa
+	std::cout << &ampb << endl; // output = ashish // this will also have ashish as an output because &ampb is the reference of data varaiable ampa
 
 
 	//
 	//
-	// MEMORY ADDRESS - IT IS THE ADDRESS OF THE VARIABLE WHERE THE VARIABLE IS STORED IN THE SYSYTEM 
+	// MEMORY ADDRESS - IT IS THE ADDRESS OF THE VARIABLE WHERE THE VARIABLE IS STORED IN THE SYSTEM 
 	// WE USE $ sign BEFORE VARIABLE NAME TO GET ITS ADDRESS 
 	//
 	string institute = "GALGOTIA UNIVERSITY ";
