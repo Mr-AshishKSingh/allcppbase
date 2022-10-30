@@ -22,7 +22,7 @@ int main() {
 
 	/* using (\") for adding " betwwn the words */
 
-	std::cout << "ashish \" ashish \" ashish" << endl;
+	std::cout << "ashish \" ashish \" assish" << endl;
 	//
 	//
 	//
