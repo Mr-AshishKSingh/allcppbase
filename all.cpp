@@ -485,7 +485,7 @@ int main() {
 	//
 	string ampa = "ashish";
 	string &ampb /* <----- this is the reference for the variable named (ampa) */ =  ampa ;
-	// we use dollar sign before any name to make it the reference of any data variable
+	
 	
 
 	std::cout << ampa << endl;  // output = ashish
